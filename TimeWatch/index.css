@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 24px;
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+.page {
+  display: none;
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  padding: 1rem 2rem;
+}
+.active {
+  display: block;
+}
+#Dashboard {
+  background-color: hsla(32, 100%, 50%, 0.822);
+  background-image: url("dashboard.png");
+  border-image: url(dashboard.png);
+}
+#Timer {
+  background-color: hsla(150, 100%, 50%, 0.993);
+}
+#Logs {
+  background-color: hsl(323, 81%, 71%);
+}
+#About {
+  background-color: yellowgreen;
+}
+h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  transition: all 1.5s;
+}
+.big {
+  font-size: 5rem;
+  font-weight: 900;
+}

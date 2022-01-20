@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeWatch</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="page active" id="Dashboard">
+        <h1>Dashboard</h1>
+        <ol>
+          <li><a href="#" data-target="Timer" class="nav-link">Timer</a></li>
+          <li><a href="#" data-target="Logs" class="nav-link">Logs</a></li>
+          <li>
+            <a href="#" data-target="About" class="nav-link">About</a>
+          </li>
+        </ol>
+      </div>
+
+      <div class="page" id="Timer">
+        <h1>Timer</h1>
+        <ol>
+          <li>
+            <a href="#" data-target="Dashboard" class="nav-link">Dashboard</a>
+          </li>
+          <li><a href="#" data-target="Logs" class="nav-link">Logs</a></li>
+          <li><a href="#" data-target="About" class="nav-link">About</a></li>
+        </ol>
+      </div>
+
+      <div class="page" id="Logs">
+        <h1>Logs</h1>
+        <ol>
+          <li>
+            <a href="#" data-target="Dashboard" class="nav-link">Dashboard</a>
+          </li>
+          <li><a href="#" data-target="Timer" class="nav-link">Timer</a></li>
+          <li><a href="#" data-target="About" class="nav-link">About</a></li>
+        </ol>
+      </div>
+
+      <div class="page" id="About">
+        <h1>About</h1>
+        <ol>
+          <li>
+            <a href="#" data-target="Dashboard" class="nav-link">Dashboard</a>
+          </li>
+          <li><a href="#" data-target="Timer" class="nav-link">Timer</a></li>
+          <li><a href="#" data-target="Logs" class="nav-link">Logs</a></li>
+        </ol>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
