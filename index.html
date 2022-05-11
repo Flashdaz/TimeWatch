@@ -1,0 +1,157 @@
+<!-- Dashboard -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeWatch</title>
+    <link rel="stylesheet" href="node_modules\@picocss\pico\css\pico.css" />
+    <link rel="styleshet" type="text/css" href="index.css" />
+    <scripts src="index.js"></scripts>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;800&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="TimerLights.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <article data-theme="dark">
+      
+          <div class="page" id="Dashboard">
+            <header class="Dashboard">
+              <h1 style="margin-left: 800px;">TimeWatch</h1>
+              <h2 style="margin-left: 818px;">Dashboard</h2>
+            </header>
+            <aside>
+              <ul style="width: 300px; height: 50px;"> 
+                <button class="contrast"
+                data-target="#Login"
+                onClick="toggleModal(event)">                 
+                Sign in 
+              </button>
+              </ul>
+            </aside>
+            
+            <!-- Timer function -->
+
+            <main style="padding-top: 100px;">
+              <div>
+              <table>
+                  <thead>
+                      <th scope="col"><p class = "TimeWatcher" id="timer">00:00</p></th>
+                      <td class="Timeropt" >
+                      <form>
+                          <h1 style="margin-bottom: 20px;">Timer</h1>
+                          <label for="Timeropt">Time</label>
+                          <select name="Timeropt" id="timer" required>
+                              <option value="25:00" disabled selected>Select</option>
+                              <option value="1:00">1 Minute</option>
+                              <option value="5:00">5 Minute</option>
+                              <option value="10:00">10 Minute</option>
+                              <option value="20:00">20 Minute</option>
+                              <option value="25:00">25 Minute</option>
+                              <option value="30:00">30 Minute</option>
+                              <option value="45:00">45 Minute</option>
+                              <option value="60:00">60 Minute</option>
+                          </select>                          
+                          <label for="Colour">Colour</label>
+                          <select name="Colour" id ="colour" required>
+                          <option value="red" disabled selected>Select</option>
+                          <option value="red">Red</option>
+                          <option value="yellow">Yellow</option>
+                          <option value="green">Green</option>
+                          <input id="start" type="submit" value="start">
+                      </form> 
+                      </td>
+                  </thead>
+                  <tr>
+                      <td scope="row">
+                      <button id="begin">Begin</button>
+                      <button id ="stop">Stop</button>
+                      </td>
+                  </tr>
+              </table>
+          </main>
+          <footer> 
+
+          </div>
+
+           <!-- Login page  -->
+
+         <div class="modal" id="Login">
+          <dialog id="Login">
+            <article>
+            <body>
+              <main class="container">
+                <article class="grid">
+                  <div>
+                    <hgroup>
+                      <h1>Sign in</h1>
+                      <h2></h2>
+                    </hgroup>
+                    <form>
+                      <input
+                        type="text"
+                        name="login"
+                        placeholder="Login"
+                        aria-label="Login"
+                        autocomplete="nickname"
+                        required
+                      />
+                      <input
+                        type="password"
+                        name="password"
+                        placeholder="Password"
+                        aria-label="Password"
+                        autocomplete="current-password"
+                        required
+                      />
+                      <fieldset>
+                        <label for="remember">
+                          Remember me
+                          <input
+                            type="checkbox"
+                            role="switch"
+                            id="remember"
+                            name="remember"
+                          />
+                        </label>
+                      </fieldset>
+                      <button
+                        type="submit"
+                        class="contrast"
+                        onclick="event.preventDefault()"
+                      >
+                        Login
+                      </button>
+                    </form>
+                  </article>
+                </dialog>
+              </div>  
+  
+
+<!-- Task list -->
+
+
+        
+          <body>
+            <main class="containter" style="margin: 300px;">
+              <article class="grid">
+                
+                <div id="newTask">
+                  <input type="text" placeholder="Task to be done">
+                  <button id="push">Add</button>
+                </div>
+                
+                <div id="tasks"></div>
+              
+              
+            </main>            
+          </body>
+  
+</article>
+</head>
+</html>
